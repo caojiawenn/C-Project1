@@ -65,12 +65,18 @@ params sub(){
 int main(int argc, char **argv)
 {
     int n=0;
+    char mul_div_flag = 'n';
     int ques_number=0;
     params anser[1000]; // 最多100道
     int false_num = 0;
     
     std::cout << "Please enter the number of questions(up to 1000):\n";
     std::cin >> ques_number;
+
+    std::cout << "would you like to do  multiplication and division?(y or n)\n";
+    std::cin >> mul_div_flag;
+
+    std::cout << "Please tell us the operation range(A )"
     
 	std::cout <<"Exercise begining.  Please answer carefully!\n";
     
