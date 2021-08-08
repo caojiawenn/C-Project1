@@ -40,7 +40,6 @@ params additive(int buttom,int top){
     p.b = buttom + rand()%(top-buttom+1); // a+gap<=top,  b: 0-gap,  a + b <= top
     cout << p.a << " + " << p.b << " = ";
     cin >> p.ans;
-    cout << "\n";
     
     int right = p.a+p.b;
     if( right != p.ans){
@@ -57,7 +56,6 @@ params sub(int buttom,int top){
     p.b = buttom + rand()%(p.a-buttom+1); // a<=top,  bottum <= b <= a
     cout << p.a << " - " << p.b << " = ";
     cin >> p.ans;
-    cout << "\n";
     
     int right = p.a-p.b;
     if( right != p.ans){
@@ -76,7 +74,6 @@ params divition(int buttom, int top){
     if(p.b==0) p.b=1;
     cout << p.a << " / "<<p.b<<" = ";
     cin >> p.ans;
-    cout <<"\n";
 
     float r=(float)p.a/(float)p.b*100.0;
     float right = round(r)/100.0;
@@ -95,7 +92,6 @@ params multi(int buttom, int top){
     p.b=buttom + rand()%(top-buttom+1);
     cout << p.a << " * "<<p.b<<" = ";
     cin >> p.ans;
-    cout <<"\n";
 
     int right = p.a*p.b;
     if(right != p.ans){
@@ -253,7 +249,7 @@ int main(int argc, char **argv)
             min_time=tmp;
         }
         sum_clock=tmp+sum_clock;
-        cout<<"Use "<< setprecision(2)<<(float)tmp/(float)CLOCKS_PER_SEC<<"s.\n";
+        cout<<"Use "<< setprecision(2)<<(float)tmp/(float)CLOCKS_PER_SEC<<"s.\n\n";
         f1=rand()%f_md;
         n++;
     }
